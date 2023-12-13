@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef unsigned long long ll;
+ll esp=1e+9;
+int main(){
+  int t;
+  cin>>t;
+  while(t--){
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    ll sum=0,count=0;
+    for(int i=n-1;i>=0;i--){
+      if(s[i]=='B'){
+        count++;
+      }else{
+        sum+=count;
+        if(count>0){
+          count=1;
+        }
+      }
+    }
+    cout<<sum<<endl;
+  }
+}
