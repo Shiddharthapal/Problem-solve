@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+    int t;
+    cin>>t;
+    while(t--){
+      int t;
+      cin>>t;
+      string s;
+      cin>>s;
+      int a[100000]={0};
+      for(int i=0;i<t;i++){
+        a[s[i]]+=1;
+      }
+      int max1=0;
+      for(int i=0;i<t;i++){
+        max1=max(max1,a[s[i]]);
+      }
+      int sum=t-max1;
+      if(max1>sum){
+        cout<<abs(max1-sum)<<endl;
+      }else{
+        if(t%2!=0) cout<<1<<endl;
+        else cout<<0<<endl;
+      }
+    }
+    
+}
