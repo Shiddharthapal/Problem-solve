@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() 
+{
+    int t;
+    cin>>t;
+    while(t--){
+      int n;
+      cin>>n;
+      int a[n],b[n];
+      for(int i=0;i<n;i++){
+        cin>>a[i]>>b[i];
+      }
+      int m1=0,x=0;
+      for(int i=0;i<n;i++){
+        if(a[i]<=10 && m1<b[i]){
+          m1=b[i];
+          x=i;
+        }
+      }
+      cout<<x+1<<endl;
+    }
+}
