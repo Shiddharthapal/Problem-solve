@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+    int t;
+    cin>>t;
+    int z;
+    while(t--){
+      int a,b,n;
+      cin>>a>>b>>n;
+      char x='a';
+      int i=0;
+      while(i<a){
+        cout<<char(x+i%n);
+        i++;
+      }
+      cout<<endl;
+    }
+}
