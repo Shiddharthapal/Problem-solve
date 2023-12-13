@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+void solve(){
+  int x,y,z;
+  cin >> x >> y >> z;
+  int flag = abs(y-z);
+  cout << abs(flag%2 - 1) << " ";
+  flag = abs(x-z);
+  cout << abs(flag%2 - 1) << " ";
+  flag = abs(y-x);
+  cout << abs(flag%2 - 1) << "\n";
+}
+signed main(){
+int t;cin >> t;
+while(t--){
+    solve();
+}
+}
