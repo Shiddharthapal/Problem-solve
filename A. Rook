@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+    int t;
+    cin>>t;
+    while(t--){
+    string s;
+    cin>>s;
+    char x=s[0];
+    char y=s[1];
+    int n=int(y);
+    for(char i='1';i<='8';i++){
+      if(i==y) continue;
+      cout<<s[0]<<i<<endl;
+    }
+    char m='a';
+    int flag=0;
+    for(int i=1;i<=8;i++){
+      if(m==s[0] && flag==0) {
+        flag=1;
+        m++;
+        continue;
+      }
+      cout<<m<<y<<endl;
+      m++;
+      
+    }
+    }
+    
+}
